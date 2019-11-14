@@ -1,12 +1,10 @@
 import React from 'react'
-import request from 'superagent'
-
-import { getMemes } from ''
+import * as api from '../api'
 
 class Memes extends React.Component {
     state = {
-        title: '',
-        URL: ''
+        title: null,
+        URL: null
     }
 
     componentDidMount() {
@@ -16,7 +14,7 @@ class Memes extends React.Component {
               title: response.body.title,
               URL: response.body.URL
           })
-      }).then(console.log)
+      })
     }
   
   
@@ -25,7 +23,7 @@ class Memes extends React.Component {
         <React.Fragment>
           <h1>Dank Memes Yo!</h1>
           <h3>{this.state.title}</h3>
-          <img src={this.state.URL}></img>
+          <img src={this.state.URL} height = '200px'></img>
         </React.Fragment>
       )
     }
