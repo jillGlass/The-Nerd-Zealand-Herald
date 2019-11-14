@@ -1,5 +1,10 @@
 import request from 'superagent'
 
+const memeURL = 'https://meme-api.herokuapp.com/gimme'
+
+export function getMemes () {
+    return request.get(memeURL)
+}
 export function getPokemon (id) {
   return request.get(`https://pokeapi.co/api/v2/pokemon/${id}`)
 }
