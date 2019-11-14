@@ -1,4 +1,5 @@
 import React from 'react'
+import Memes from '../components/memes'
 import NASA from '../components/NASA'
 import Movies from './Movies'
 
@@ -10,6 +11,7 @@ const App = () => {
       <h1>The Nerd-Zealand Herald</h1>
       <Pokemon />
       <NASA />
+      <Memes />
       <Movies/>
     </React.Fragment>
   )
