@@ -1,4 +1,5 @@
 import React from 'react'
+import Memes from './memes'
 
 const App = () => {
   return (
