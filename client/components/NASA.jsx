@@ -27,7 +27,8 @@ class NASA extends React.Component {
       render () {
         return (
           <React.Fragment>
-            <h1>Space Stuff</h1>
+            <h1>NASA Image of the Day</h1>
+            <h2>Get blown away with this image of Mercury transiting the sun</h2>
             <img src = {this.state.NASA.image} height = '200px'></img>
             <p>Image: {this.state.NASA.title}</p>
             <p>{this.state.NASA.explanation}</p>
