@@ -3,22 +3,20 @@ import * as api from '../api'
 
 class Memes extends React.Component {
     state = {
-        title: null,
-        url: null
+      title: null,
+      url: null
     }
 
-    componentDidMount() {
+    componentDidMount () {
       api.getMemes()
-      .then(response => {
+        .then(response => {
           this.setState({
-              title: response.body.title,
-              url: response.body.url
+            title: response.body.title,
+            url: response.body.url
           })
-          .then(console.log())
-      })
+        })
     }
-  
-  
+
     render () {
       return (
         <React.Fragment>
@@ -28,15 +26,7 @@ class Memes extends React.Component {
         </React.Fragment>
       )
     }
-  }
+}
 
 export default Memes
-  
-//   {
-//     "postLink": "https://redd.it/9vqgv2",
-//     "subreddit": "memes",
-//     "title": "Good mor-ning Reddit!...",
-//     "url": "https://i.redd.it/yykt3r9zsex11.png"
-//   }
-
 
