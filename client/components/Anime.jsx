@@ -1,6 +1,5 @@
 import React from 'react'
 import { getAnime } from '../api'
-var convert = require('xml-js')
 
 class Anime extends React.Component {
   state ={
