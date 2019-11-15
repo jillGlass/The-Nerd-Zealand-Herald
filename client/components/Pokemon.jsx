@@ -35,7 +35,7 @@ class Pokemon extends React.Component {
   render () {
     return (
       <div className="ui card">
-        <Header as='h1' textAlign="center">Pokemon of the Day</Header>
+        <Header as='h1' textAlign="center">Cool Pokemon</Header>
         <Header as='h2' textAlign="center">{this.state.name}</Header>
 
         <div className="image" size="small">
