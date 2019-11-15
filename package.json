@@ -33,7 +33,6 @@
     "semantic-ui-react": "^0.88.1",
     "superagent": "^5.1.0",
     "cors": "^2.8.5",
-  
     "xml-js": "^1.6.11"
   },
   "devDependencies": {
