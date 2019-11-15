@@ -7,6 +7,14 @@ export function getNasa () {
 }
 
 const memeURL = 'https://meme-api.herokuapp.com/gimme'
+var id = Math.floor((Math.random() * 50) + 1)
+const animeURL = `http://localhost:3000/api/v1/anime/${id}`
+
+export function getAnime () {
+  return request.get(animeURL)
+}
+
+const memeURL = 'https://meme-api.herokuapp.com/gimme/ProgrammerHumor'
 
 export function getMemes () {
   return request.get(memeURL)

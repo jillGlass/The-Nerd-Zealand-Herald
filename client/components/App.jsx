@@ -6,12 +6,14 @@ import Movies from './Movies'
 import Pokemon from './Pokemon'
 
 import { Header } from 'semantic-ui-react'
+import Anime from './Anime'
 
 const App = () => {
   return (
     <React.Fragment>
       <Header as='h1' textAlign="center">The Nerd-Zealand Herald</Header>
       <h3>Your daily go to for Dank Memes, Space facts and images, Rick and Morty intelligence, Pokemon of the day and Anime galore.  Stay and Explore. </h3>
+      <Anime />
       <Pokemon />
       <NASA />
       <Memes />
