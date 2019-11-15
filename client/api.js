@@ -1,6 +1,6 @@
 import request from 'superagent'
 
-const memeURL = 'https://meme-api.herokuapp.com/gimme'
+const memeURL = 'https://meme-api.herokuapp.com/gimme/ProgrammerHumor'
 
 export function getMemes () {
     return request.get(memeURL)
